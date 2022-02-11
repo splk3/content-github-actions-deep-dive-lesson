@@ -64,7 +64,7 @@ jobs:
       - name: update function code
         run: |
           aws lambda update-function-code \
-          --function-name pjb-test-function \
+          --function-name pjbTestFunction \
           --s3-bucket github-test-bucket-pjb \
           --s3-key ${{ github.sha }}.zip \
           --publish
