@@ -75,7 +75,7 @@ jobs:
         run: aws lambda delete-function --function-name test-function
 
   deploy:
-    runs: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: test
     steps:
       - name: configure aws creds
